@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="style.css" rel="stylesheet">
+    <meta name="description" content="Anu's Portfolio - Aspiring Full Stack Web Developer">
+</head>
+<body>
+    <nav class="navbar" aria-label="Main Navigation">
+        <div class="logo">Anu</div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+        <button class="menu-toggle" aria-controls="nav-links" aria-expanded="false">☰</button>
+    </nav>
+    <section class="home" id="Home">
+        <div class="profile">
+            <img src="myProfile.jpeg.jpeg" alt="Anu's profile picture">
+        </div>
+        <div class="home-text">
+            <h1>Hi! I'm Anu</h1>
+            <p>Aspiring Full Stack Web Developer</p>
+        </div>
+    </section>
+    <section class="about" id="About">
+        <div class="about-text">
+            <h1>About Me</h1>
+            <p>
+                I am a second-year BTech CSE student at lpu.
+                I aim to become a full-stack web developer.
+                I love creating responsive and dynamic websites using modern frameworks.
+                I'm currently working on enhancing my software development skills, aiming to build 
+                innovative solutions that bridge the gap between technology and real-world problems.
+                With a strong foundation in programming, algorithms, and system design, I’m constantly
+                exploring new ways to build intelligent and efficient solutions.
+                In my free time, I love exploring new tech, mentoring juniors, cooking, and participating 
+                in tech communities.
+
+            </p>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <h1>Skills</h1>
+        <div class="skills-list">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Tailwind CSS</div>
+            <div class="skill-card">Bootstrap</div>
+            <div class="skill-card">PHP</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">C</div>
+            <div class="skill-card">C++</div>
+            <div class="skill-card">Java</div>
+            <div class="skill-card">MySQL</div>
+            <div class="skill-card">DBMS</div>
+            <div class="skill-card">React</div>
+            <div class="skill-card">Node.js</div>
+            <div class="skill-card">AI</div>
+            <div class="skill-card">MongoDB</div>
+            <div class="skill-card">Git</div>
+            <div class="skill-card">GitHub</div>
+        </div>
+    </section>
+    <section class="projects" id="Projects">
+        <h1>Projects</h1>
+        <div class="project-list">
+            <div class="project-card">
+                <h2>Bookstore Management System 📚</h2>
+                <p class="project-description">Technologies used:</p>
+                <ul class="tech-list">
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Tailwind CSS</li>
+                    <li>Bootstrap</li>
+                </ul>
+                <a href="#" class="view-btn">View Project</a>
+            </div>
+            <div class="project-card">
+                <h2>LED Distance Indicator 💡</h2>
+                <p class="project-description">Technologies used:</p>
+                <ul class="tech-list">
+                    <li>Arduino</li>
+                    <li>C++</li>
+                    <li>Sensors</li>
+                </ul>
+                <a href="#" class="view-btn">View Project</a>
+            </div>
+            <div class="project-card">
+                <h2>Virtual Event Hosting and Management System 📹</h2>
+                <p class="project-description">Technologies used:</p>
+                <ul class="tech-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+                <a href="#" class="view-btn">View Project</a>
+            </div>
+            <div class="project-card">
+                <h2>Spotify Clone 🎵</h2>
+                <p class="project-description">Technologies used:</p>
+                <ul class="tech-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                </ul>
+                <a href="#" class="view-btn">View Project</a>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="Contact">
+        <h1>Contact Me</h1>
+        <div class="contact-links">
+            <a href="https://github.com/Anu2024-coder" target="_blank">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/github.svg" alt="GitHub Logo"> GitHub</a>
+            <a href="https://www.linkedin.com/in/anu-gill-a59880294/" target="_blank">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/linkedin.svg" alt="LinkedIn Logo">LinkedIn</a>
+            <p>📞 Contact: 0123456789</p>
+        </div>
+        <h3 class="heart">Made with <span>&hearts;</span> by Anu</h3>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2025 Anu. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', function() {
+        const expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+        menuToggle.setAttribute('aria-expanded', !expanded);
+        navLinks.style.display = expanded ? 'none' : 'flex';
+    });
+});
+    </script>
+</body>
+</html>
