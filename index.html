@@ -843,6 +843,16 @@
       color: var(--primary);
     }
 
+    .contact-details p {
+      color: var(--text-dark);
+      font-size: 19px;
+      transition: color 0.3s;
+    }
+
+    body.dark .contact-details p {
+      color: var(--text-light);
+    }
+
     .contact-details a {
       color: var(--text-dark);
       text-decoration: none;
@@ -853,8 +863,6 @@
       max-width: 100%;
     }
 
-    .anu{
-      font-size: 19px;
     body.dark .contact-details a {
       color: var(--text-light);
     }
@@ -884,6 +892,12 @@
       max-width: 1200px;
       margin: 0 auto;
     }
+    
+    /* Fixed: Center align footer content */
+    .footer-content p {
+      text-align: center;
+      margin: 10px 0;
+    }
 
     @keyframes float {
       0% { transform: translateY(0px); }
@@ -894,7 +908,7 @@
     /* Toast notification for download */
     .toast {
       position: fixed;
-      bottom: 20px;
+      bottom: 80px;
       left: 50%;
       transform: translateX(-50%);
       background: var(--primary);
@@ -908,6 +922,7 @@
       display: flex;
       align-items: center;
       gap: 10px;
+      font-size: 16px;
     }
     
     .toast.show {
@@ -958,6 +973,10 @@
 
       .mobile-menu-btn {
         display: block;
+      }
+      
+      .toast {
+        bottom: 100px;
       }
     }
 
@@ -1017,6 +1036,12 @@
       
       .navbar {
         padding: 15px 5%;
+      }
+      
+      .toast {
+        width: 90%;
+        text-align: center;
+        bottom: 120px;
       }
     }
   </style>
@@ -1219,7 +1244,7 @@
           </div>
           <div class="contact-details">
             <h3>Email</h3>
-            <p class="anu">gillanu2003@gmail.com<p>
+            <a href="mailto:gillanu2003@gmail.com">gillanu2003@gmail.com</a>
           </div>
         </div>
         <div class="contact-item">
